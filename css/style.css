@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Futura-Book', sans-serif;
+    color: #333;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.22;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto; 
+}
+
+/* Header */
+
+.header {
+    background-image: url(./../images/header/bg-header.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Header__top */
+
+.header__top {
+    padding: 54px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    color: #fff;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    font-weight: 300;
+}
+
+.nav__link {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in; 
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+.header__phone {
+    display: flex;
+    column-gap: 9px;
+    align-items: center;
+}
+
+.header__phone span {
+    font-weight: 700;
+}
+
+/* Header__main */
+
