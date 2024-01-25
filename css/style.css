@@ -39,6 +39,22 @@ body {
     margin: 0 auto; 
 }
 
+.btn {
+    width: 300px;
+    border-radius: 10px;
+    background-color: #FFA500;
+    padding: 19px 68px;
+    font-size: 17px;
+    color: #fff;
+    line-height: 19px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in;
+}
+
+.btn:hover {
+    background-color: #07086C;
+}
+
 /* Header */
 
 .header {
@@ -88,3 +104,133 @@ body {
 
 /* Header__main */
 
+.header__main {
+    display: flex;
+    column-gap: 65px;
+}
+
+.header__content {
+    max-width: 835px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.header__title {
+    margin-bottom: 4px;
+    font-size: 69px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.header__title span:nth-child(1) {
+    font-size: 50px;
+    line-height: 1;
+    color: #969AF7;
+}
+
+.header__title span:nth-child(2) {
+    font-size: 61px;
+    line-height: 1.22;
+}
+
+.header_subtitle {
+    margin-bottom: 37px;
+    max-width: 777px;
+    font-size: 23px;
+    line-height: 1.29;
+    color: #969AF7;
+}
+
+.header__advantages {
+    padding: 25px 30px;
+    background-image: url(./../images/header/header-gradient.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+.header__advantages-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.header__advantages-item {
+    display: flex;
+    column-gap: 14px;
+    font-size: 22px;
+    line-height: 1.29;
+}
+
+.header__form {
+    max-width: 380px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header__form-title {
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    padding: 32px 60px 24px;
+    border-radius: 10px 10px 0px 0px;
+    background: linear-gradient(180deg, #6A32B4 0%, #552693 100%);
+}
+
+.form__inner {
+    padding: 55px 40px 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.header__form-name {
+    position: relative;
+}
+
+.header__form-name p {
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    color: #626366;
+    line-height: 1.29;
+}
+
+.header__intup {
+    width: 300px;
+    height: 56px;
+    padding: 0 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    background: #F5F3FF;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.10) inset;
+}
+
+.header__intup::placeholder {
+    color: #BCBFC4;
+    font-size: 20px;
+    line-height: 1.29;
+}
+
+.header__form-bottom {
+    position: relative;
+    margin-top: 17px;
+    padding-left: 20px;
+    color: #C0C0C0;
+    font-size: 14px;
+}
+
+.header__form-bottom::before {
+    position: absolute;
+    content: url('./../images/header/lock.svg');
+    top: 0;
+    left: 25px;
+    width: 16px;
+    height: 16px;
+}
