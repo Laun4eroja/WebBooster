@@ -55,14 +55,23 @@ body {
     background-color: #07086C;
 }
 
+.title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+}
+
 /* Header */
 
 .header {
-    background-image: url(./../images/header/bg-header.svg);
+    background-image: url(./../images/header/bg-header.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 100vh;
+    position: relative;
+    z-index: 7;
 }
 
 /* Header__top */
@@ -233,4 +242,147 @@ body {
     left: 25px;
     width: 16px;
     height: 16px;
+}
+
+
+/* Benefits */
+
+.benefits {
+    margin-top: -70px;
+    margin-bottom: -135px;
+    padding-top: 155px;
+    padding-bottom: 188px;
+    background-image: url(./../images/benefits/benefits-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.benefits__title {
+    margin-bottom: 25px;
+    color: #111;
+}
+
+.benefits__subtitle {
+    margin-bottom: 42px;
+    max-width: 1050px;
+    display: inline-block;
+    color: #030303;
+    font-size: 22px;
+    line-height: 1.09;
+}
+
+.benefits__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 43px;
+}
+
+.benefits__card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 32px 61px;
+}
+
+.benefits__card::after {
+    position: absolute;
+    content: url(./../images/benefits/card-bg.svg);
+    bottom: -7px;
+    right: 0;
+}
+
+.benefits__card img {
+    margin-bottom: 39px;
+    width: 157px;
+    height: 163px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.benefits__card-title {
+    margin-bottom: 14px;
+    color: #2A336C;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.benefits__card-text {
+    color: #555;
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+/* Manufacturers */
+
+.manufacturers {
+    padding-top: 194px;
+    background-image: url(./../images/manufacturers/manufacturer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    z-index: 7;
+}
+
+.manufacturers__title {
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+
+/* Swiper */
+
+.swirep__inner {
+    position: relative;
+}
+
+.swiper {
+    width: 1300px;
+    height: 174px;
+    border-radius: 10px;    
+}
+
+.slider__item {
+    position: relative;
+    width: 242px;
+    height: 174px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.slider__item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-btn {
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn-prev {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translate(0%, -50%);
+}
+
+.btn-next {
+    position: absolute;
+    top: 50%;
+    right: -110px;
+    transform: translate(0%, -50%);
+}
+
+.manufacturers__text {
+    margin-top: 42px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.55;
 }
