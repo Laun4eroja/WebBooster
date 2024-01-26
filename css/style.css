@@ -20,7 +20,7 @@ button {
     cursor: pointer;
 }
 
-ul {
+ul, ol {
     list-style: none;
 }
 
@@ -322,6 +322,7 @@ body {
     background-image: url(./../images/manufacturers/manufacturer-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     height: 100vh;
     position: relative;
     z-index: 7;
@@ -385,4 +386,116 @@ body {
     color: #fff;
     font-size: 20px;
     line-height: 1.55;
+}
+
+
+/* Steps */
+
+.steps {
+    margin-top: -70px;
+    padding-top: 135px;
+    margin-bottom: -135px;
+    padding-bottom: 188px;
+    
+    background-image: url(./../images/steps/steps-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.steps__title {
+    margin-bottom: 24px;
+    color: #111;
+}
+
+.steps__subtitle {
+    margin-bottom: 46px;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.steps__inner {
+    position: relative;
+    counter-reset: number;
+}
+
+.steps__item {
+    position: relative;
+}
+
+.steps__item:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.steps__item:nth-child(2) {
+    position: absolute;
+    left: 440px;
+    top: 0;
+}
+
+.steps__item:nth-child(3) {
+    position: absolute;
+    left: 880px;
+    top: 0;
+}
+
+.steps__item:nth-child(4) {
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+
+.steps__item:nth-child(5) {
+    position: absolute;
+    top: 300px;
+    left: 414px;
+}
+
+.steps__item:nth-child(6) {
+    position: absolute;
+    top: 300px;
+    left: 851px;
+}
+
+.steps__item::before {
+    content: '0' counter(number);
+	counter-increment: number;
+	position: absolute;
+	font-size: 36px;
+	font-weight: 700;
+	color: #969AF7;
+	top: 33px;
+	left: 45px;
+	z-index: 1;
+}
+
+.steps__item img {
+    position: relative;
+}
+
+.steps__item-content {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    text-align: left;
+}
+
+.steps__item-title {
+    margin-bottom: 30px;
+    max-width: 300px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.steps__item-text {
+    position: absolute;
+    font-size: 17px;
+    color: #E3E3E3;
+}
+
+.steps__btn {
+    margin-top: 660px;
 }
