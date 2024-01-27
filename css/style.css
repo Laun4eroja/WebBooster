@@ -499,3 +499,131 @@ body {
 .steps__btn {
     margin-top: 660px;
 }
+
+
+/* Answers */
+
+.answers {
+    padding-top: 144px;
+    padding-bottom: 95px;
+    background-image: url(./../images/answers/answers-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.answers__title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+/* Accordeon */
+
+.accordeon {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.accordeon__item {
+    border-radius: 10px;
+    border: 1px solid #167EC2;
+    background: #FFF;
+}
+
+.accordeon__item-title {
+    position: relative;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 53px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    line-height: 1.16;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FFF 50.57%, #BDC0FF 100%);
+    box-shadow: 0px 0px 50px -10px rgba(22, 126, 194, 0.20);
+}
+
+.accordeon__item-title--active {
+    color: #fff;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #969AF7 0%, #686EEC 100%);
+}
+
+.accordeon__item-title::after {
+    position: absolute;
+    content: '';
+    background-image: url('./../images/answers/ans-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #757AEF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    right: 37px;
+}
+
+.accordeon__item-title.accordeon__item-title--active::after {
+    background-image: url(./../images/answers/ans-arrow2.svg);
+    background-color: #fff;
+}
+
+.accordeon__item-text {
+    overflow: hidden;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.35;
+    opacity: 0;
+    max-height: 0;
+    padding: 0 40px;
+    transition: opacity .2s, max-height .3s;
+    transition: all .3s;
+}
+
+.accordeon__item-text.accordeon__item-text--visible {
+    opacity: 1;
+}
+
+.accordeon__item-title--active + .accordeon__item-text {
+    padding: 20px 40px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #333;
+    padding: 72px 0;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    color: #fff
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    font-weight: 300;
+}
+
+.footer__link {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in; 
+}
+
+.footer__link:hover {
+    opacity: 1;
+}
+
+.footer__btn {
+    background-color: #969AF7;
+}
