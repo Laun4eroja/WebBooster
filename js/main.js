@@ -31,3 +31,8 @@ accordeonTitles.forEach.call(accordeonTitles, function(accordeonTitle) {
 
   });
 });
+
+document.querySelector('.burger').addEventListener('click', function() {
+  this.classList.toggle('active__bur');
+  document.querySelector('.nav').classList.toggle('open__bur');
+});
