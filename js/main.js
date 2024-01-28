@@ -11,6 +11,24 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.btn-next',
     prevEl: '.btn-prev',
   },
+  
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    520: {
+      slidesPerView: 2
+    },
+    640: {
+      slidesPerView: 3
+    },
+    1000: {
+      slidesPerView: 4
+    },
+    1300: {
+      slidesPerView: 5
+    },
+  }
 });
 
 const accordeon = document.querySelectorAll('.accordeon');
